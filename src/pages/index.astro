@@ -1,5 +1,5 @@
 ---
-import Header from "../components/header.astro";
+import Header from "../components/Nav.astro";
 const pageTitle = "Home"
 ---
 
@@ -11,10 +11,9 @@ const pageTitle = "Home"
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
+	<body class="h-96">
 		<Header />
-		<h1>Dicari anak hilang</h1>
-		<img src="/img/logo/foto.jpeg" alt="">
-		<a href="/about">pergi ke halaman about</a>
+		<div class="container bg-gradient-to-t from-white to-cyan-100 h-full">tes</div>
+		<div class="container mt-72">coba</div>
 	</body>
 </html>
