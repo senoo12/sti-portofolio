@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.astro";
+const pageTitle = "Home"
 ---
 
 <html lang="en">
@@ -8,11 +9,11 @@ import Header from "../components/header.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<Header />
-		<img src="../../public/img/logo/logo.jpeg" alt="">
+		<img src="/img/logo/logo.jpeg" alt="">
 		<a href="/about">pergi ke halaman about</a>
 	</body>
 </html>
