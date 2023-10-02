@@ -8,7 +8,7 @@ module.exports = {
 				linearBlue: 'A0DDFF',
 			},
 			fontFamily: {
-				'figtree': ['Figtree']
+				'Figtree': ['Figtree']
 			}
 		},
 	},

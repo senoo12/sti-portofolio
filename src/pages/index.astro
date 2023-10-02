@@ -1,19 +1,28 @@
 ---
-import Header from "../components/Nav.astro";
-const pageTitle = "Home"
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/Hero.astro";
+import Navbar from '../components/Navbar.jsx';
+import Footer from "../components/Footer.astro";
+const pageTitle = "Home";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body class="h-96">
-		<Header />
-		<div class="container bg-gradient-to-t from-white to-cyan-100 h-full">tes</div>
-		<div class="container mt-72">coba</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="font-Figtree">
+    <Navbar />
+
+    <Layout title="Home">
+      <main>
+      </main>
+    </Layout>
+    
+  </body>
 </html>
